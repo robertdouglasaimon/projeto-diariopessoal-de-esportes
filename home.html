@@ -11,89 +11,112 @@
 
 <!---PARTE SUPERIOR DO SITE - ACIMA DO NAV ---->
 <header>
-    <h1>Meu diário de esportes</h1>
+    <h1>Diário de esportes</h1>
     <p>Registro pessoal de algumas aventuras esportivas</p>
 </header>    
 <!--------------------------------------------->
 
 <!--NAV - MENU SUPERIOR --------------->
 <nav>
-    <a href="#">Início</a>
+    <a href="home.html">Início</a>
     <a href="#">Recentes</a>
-    <a href="#">Artigos</a>
-    <a href="#">Contato</a>
+    <!------------------------------------------------------->
+    <div class="menu-dropdown">
+        <button class="dropdown-button">Postagens</button>
+        <div class="dropdown-content">
+            <div id="postList">
+                <!-- Lista de postagens -->
+                <a href="#quemsoueu">Quem sou eu</a>
+                <a href="#introducao">Introdução</a>
+                <a href="#ciclismo1">Ciclismo 1</a>
+                <a href="#karate1">Karate 1</a>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------------->
+    <a href="#contato">Contato</a>
 </nav>
-<!------------------------------------->
 
+<!--BOTÃO DE SUBIR E DESCER A TELA / FILTRO POR DATAS ------->
+<!-- Adicione o seguinte código no início do <body> para o botão lateral -->
+    <div class="scroll-button" onclick="scrollToTop()">↑</div>
+    <!-- Adicione o seguinte código no início do <body> para os botões de scroll -->
+<div class="scroll-button scroll-top" onclick="scrollToTop()">↑</div>
+<div class="scroll-button scroll-bottom" onclick="scrollToBottom()">↓</div>
+<!----------------------------------------------------------->
 <main>
         <article>
-            <h1>Uma Jornada de Superação e Conquistas 🏆</h1>
-            <p>Olá a todos! Meu nome é <strong>Robert Douglas</strong>, tenho 30 anos, e quero compartilhar um pouco da minha jornada incrível através dos esportes, uma história de superação, mudanças físicas e conquistas pessoais.</p>
-        
-            <p>Iniciei minha trajetória com uma bicicleta aro 26, completamente sedentário, impulsionado por uma pequena deficiência cardíaca descoberta durante consultas cardiológicas. Nos primeiros meses, cada pedalada parecia um desafio sobre-humano. A falta de fôlego, a dor nos pulmões, o peito prestes a explodir – tudo isso era uma prova constante, mas eu persisti.</p>
-        
-            <p>Hoje, pratico duas modalidades de ciclismo (<a href="https://www.pedal.com.br/modalidades-ciclismo-de-estrada_texto14460.html" target="_blank" class="externo"><STRONG>Road</STRONG></a> e <a href="https://autopapo.uol.com.br/noticia/mountain-bike-modalidades-equipamentos/" target="_blank" class="externo"><strong>Mountain XCM</strong></a>). Com o tempo, aprendi a superar meus limites. Melhorei meu tempo, aumentei as distâncias e aprimorei meus equipamentos. Hoje, sou um ciclista dedicado, participando de eventos, corridas e até vencendo campeonatos. A superação não ficou restrita às pedaladas, estendendo-se às artes marciais.</p>
-        
-            <p>Praticante de karatê (<a href="https://ikgabrasil.com" target="_blank" class="externo"><strong>
-                Goju
-                    - Ryu
-            </strong></a>, <a href="https://jkabrasil.com.br/?fbclid=IwAR1V3nC3oNtZpv0i8YNikHG75XH2oGwXYLJsduUsRgwLeH7O9ufH-2iojy4" target="_blank" class="externo"><strong>Shotokan</strong></a>, <a href="https://karateuechiryu.com" target="_blank" class="externo"><strong>Uechi - Ryu</strong></a> e <a href="https://kyokushinpenha.com.br/index.php/o-que-e-o-kyokushin-karate/#:~:text=O%20QUE%20É%20KYOKUSHIN%20KARATE,acrescentando%20o%20contato%20no%20Karate." target="_blank" class="externo"><strong>Kyokushin Kaikan</strong></a>) e boxe, inicialmente duvidei da minha capacidade devido ao uso de óculos e à minha altura (1,89m). No entanto, com treino intenso, esforço, algumas fraturas e muita concentração, alcancei um nível de habilidade excelente, conquistando campeonatos e desafiando os estereótipos.</p>
-        
-            <p>Esta página é meu espaço para compartilhar minha experiência transformadora. Os esportes não apenas mudaram meu corpo, mas também meu estado mental, proporcionando crescimento físico e psicológico. Aqui, vou postar diariamente sobre meus treinos, eventos e momentos marcantes que moldaram minha jornada.</p>
-        
-            <p>Junte-se a mim nessa jornada de determinação, superação e paixão pelos esportes!</p>
-        
-            <picture>
-                <source media="(max-width: 670px)" srcset="assets/img/page-1-pq.png">
-                <img src="assets/img/page-1.png" alt="Foto de introdução" class="pequena">
-            </picture>
+            <div id="quemsoueu">
+                <h1>Uma Jornada de Superação e Conquistas 🏆</h1>
+                <p>Olá a todos! Meu nome é <strong>Robert Douglas</strong>, tenho 30 anos, e quero compartilhar um pouco da minha jornada incrível através dos esportes, uma história de superação, mudanças físicas e conquistas pessoais.</p>
+                <p>Iniciei minha trajetória com uma bicicleta aro 26, completamente sedentário, impulsionado por uma pequena deficiência cardíaca descoberta durante consultas cardiológicas. Nos primeiros meses, cada pedalada parecia um desafio sobre-humano. A falta de fôlego, a dor nos pulmões, o peito prestes a explodir – tudo isso era uma prova constante, mas eu persisti.</p>
+                <p>Hoje, pratico duas modalidades de ciclismo (<a href="https://www.pedal.com.br/modalidades-ciclismo-de-estrada_texto14460.html" target="_blank" class="externo"><STRONG>Road</STRONG></a> e <a href="https://autopapo.uol.com.br/noticia/mountain-bike-modalidades-equipamentos/" target="_blank" class="externo"><strong>Mountain XCM</strong></a>). Com o tempo, aprendi a superar meus limites. Melhorei meu tempo, aumentei as distâncias e aprimorei meus equipamentos. Hoje, sou um ciclista dedicado, participando de eventos, corridas e até vencendo campeonatos. A superação não ficou restrita às pedaladas, estendendo-se às artes marciais.</p>
+                <p>Praticante de karatê (<a href="https://ikgabrasil.com" target="_blank" class="externo"><strong>
+                    Goju
+                        - Ryu
+                </strong></a>, <a href="https://jkabrasil.com.br/?fbclid=IwAR1V3nC3oNtZpv0i8YNikHG75XH2oGwXYLJsduUsRgwLeH7O9ufH-2iojy4" target="_blank" class="externo"><strong>Shotokan</strong></a>, <a href="https://karateuechiryu.com" target="_blank" class="externo"><strong>Uechi - Ryu</strong></a> e <a href="https://kyokushinpenha.com.br/index.php/o-que-e-o-kyokushin-karate/#:~:text=O%20QUE%20É%20KYOKUSHIN%20KARATE,acrescentando%20o%20contato%20no%20Karate." target="_blank" class="externo"><strong>Kyokushin Kaikan</strong></a>) e boxe, inicialmente duvidei da minha capacidade devido ao uso de óculos e à minha altura (1,89m). No entanto, com treino intenso, esforço, algumas fraturas e muita concentração, alcancei um nível de habilidade excelente, conquistando campeonatos e desafiando os estereótipos.</p>
+                <p>Esta página é meu espaço para compartilhar minha experiência transformadora. Os esportes não apenas mudaram meu corpo, mas também meu estado mental, proporcionando crescimento físico e psicológico. Aqui, vou postar diariamente sobre meus treinos, eventos e momentos marcantes que moldaram minha jornada.</p>
+                <p>Junte-se a mim nessa jornada de determinação, superação e paixão pelos esportes!</p>
+                <picture>
+                    <source media="(max-width: 670px)" srcset="assets/img/page-1-pq.png">
+                    <img src="assets/img/page-1.png" alt="Foto de introdução" class="pequena">
+                </picture>
+            </div>
        
-            <h2>Registros De Aventuras ⛰️</h2>
-        
-            <h3> Registro de Introdução: Superando Limites e Desafiando o Inimaginável</h3>
-        
-            <p>Ao iniciar minha jornada no ciclismo, jamais poderia imaginar as transformações extraordinárias que essa experiência traria para minha vida. Originário de uma rotina sedentária, onde estudava e jogava videogame, o exercício físico parecia um território desconhecido. As primeiras pedaladas foram verdadeiros desafios, quase torturantes, e em diversos momentos, sentia-me à beira de um colapso cardíaco ou desmaio.</p>
-        
-            <p>Contudo, decidi embarcar nessa jornada, pedalando diariamente por quatro meses. Inicialmente, optei por permanecer no mesmo local por um mês, focando na estabilização da respiração, resistência e ritmo do corpo. Em seguida, ousei aumentar as distâncias. A cada novo desafio, a sensação de quase morte retornava, mas, surpreendentemente, ao invés de desânimo, uma estranha animação tomava conta de mim. Era como se eu desafiasse a mim mesmo: "Você consegue, supere seus limites."</p>
-        
-            <p>Assim, minha jornada progrediu. Comecei com modestos 5 km, evoluindo para 11, depois 15. Quando achei que havia alcançado meu ápice, enfrentei minha primeira trilha, o desafiador <a href="https://www.google.com/search?client=opera-gx&q=morro+do+romualdo+brasilia+df&sourceid=opera&ie=UTF-8&oe=UTF-8&lqi=Ch1tb3JybyBkbyByb211YWxkbyBicmFzaWxpYSBkZkjrw4TMl6uAgAhaMRAAEAEQAhADEAQYARgCGAMYBCIdbW9ycm8gZG8gcm9tdWFsZG8gYnJhc2lsaWEgZGaSAQtzY2VuaWNfc3BvdJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VSbExYRkxOSEZuUlJBQqoBURABKgkiBW1vcnJvKAwyHxABIhus4fhUUsBVAdWp1GbwPtkbGvdkDv1P6dNu3nIyIRACIh1tb3JybyBkbyByb211YWxkbyBicmFzaWxpYSBkZg#ip=1&rlimm=11238622984263715717" target="_blank" class="externo"><strong>"Mirante do Romualdo"</strong></a>, com montanhas, vegetação densa e dificuldade média/alta. Surpreendentemente, completei os impressionantes 21 km dessa aventura. Após mais treinamento, alcancei um feito ainda maior: meu primeiro pedal de 50 km.</p>
-        
-            <p>Hoje, encaro desafios que outrora pareciam intransponíveis, pedalando entre 29 e 160 km, visando atingir a marca de 200 km solo. Contudo, não esqueço o início penoso, a metamorfose que ocorreu em meu físico e mental. Tornei-me uma pessoa mais evoluída em todos os aspectos, agradecendo a Deus e a mim mesmo por nunca desistir, por manter a crença de que eu poderia alcançar mais.</p>
-        
-            <p>Apesar do medo, das dores e falhas, nunca permiti que a descrença se instalasse. Essa resiliência moldou minha força interior, uma característica que permanece arraigada em minha essência. E, mesmo agora, após tantas conquistas, reconheço que ainda sou o mesmo nesse aspecto.</p>
-        
-            <p>Esta introdução pretende ser mais do que um simples preâmbulo. É o testemunho de uma transformação pessoal que precede qualquer postagem ou registro futuro. Uma história de superação, evolução e perseverança que espero continuar, sempre ultrapassando meus limites com segurança, em busca constante de melhoria.</p>
-        
-            <br>
-            <img src="assets/img/PRIMEIRO PEDAL REGISTRADO NO STRAVA.png" alt="primeiro pedal registrado no strava" class="pequena">
-            <br>
-            <img src="assets/img/PRIMEIRA TRILHA REGISTRADA NO STRAVA.png" alt="primeira trilha registrada no strava" class="pequena">
+            <div id="introducao">
+                <h2>Registros De Aventuras ⛰️</h2>
+                <h3> Registro de Introdução: Superando Limites e Desafiando o Inimaginável</h3>
+                <p>Ao iniciar minha jornada no ciclismo, jamais poderia imaginar as transformações extraordinárias que essa experiência traria para minha vida. Originário de uma rotina sedentária, onde estudava e jogava videogame, o exercício físico parecia um território desconhecido. As primeiras pedaladas foram verdadeiros desafios, quase torturantes, e em diversos momentos, sentia-me à beira de um colapso cardíaco ou desmaio.</p>
+                <p>Contudo, decidi embarcar nessa jornada, pedalando diariamente por quatro meses. Inicialmente, optei por permanecer no mesmo local por um mês, focando na estabilização da respiração, resistência e ritmo do corpo. Em seguida, ousei aumentar as distâncias. A cada novo desafio, a sensação de quase morte retornava, mas, surpreendentemente, ao invés de desânimo, uma estranha animação tomava conta de mim. Era como se eu desafiasse a mim mesmo: "Você consegue, supere seus limites."</p>
+                <p>Assim, minha jornada progrediu. Comecei com modestos 5 km, evoluindo para 11, depois 15. Quando achei que havia alcançado meu ápice, enfrentei minha primeira trilha, o desafiador <a href="https://www.google.com/search?client=opera-gx&q=morro+do+romualdo+brasilia+df&sourceid=opera&ie=UTF-8&oe=UTF-8&lqi=Ch1tb3JybyBkbyByb211YWxkbyBicmFzaWxpYSBkZkjrw4TMl6uAgAhaMRAAEAEQAhADEAQYARgCGAMYBCIdbW9ycm8gZG8gcm9tdWFsZG8gYnJhc2lsaWEgZGaSAQtzY2VuaWNfc3BvdJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VSbExYRkxOSEZuUlJBQqoBURABKgkiBW1vcnJvKAwyHxABIhus4fhUUsBVAdWp1GbwPtkbGvdkDv1P6dNu3nIyIRACIh1tb3JybyBkbyByb211YWxkbyBicmFzaWxpYSBkZg#ip=1&rlimm=11238622984263715717" target="_blank" class="externo"><strong>"Mirante do Romualdo"</strong></a>, com montanhas, vegetação densa e dificuldade média/alta. Surpreendentemente, completei os impressionantes 21 km dessa aventura. Após mais treinamento, alcancei um feito ainda maior: meu primeiro pedal de 50 km.</p>
+                <p>Hoje, encaro desafios que outrora pareciam intransponíveis, pedalando entre 29 e 160 km, visando atingir a marca de 200 km solo. Contudo, não esqueço o início penoso, a metamorfose que ocorreu em meu físico e mental. Tornei-me uma pessoa mais evoluída em todos os aspectos, agradecendo a Deus e a mim mesmo por nunca desistir, por manter a crença de que eu poderia alcançar mais.</p>
+                <p>Apesar do medo, das dores e falhas, nunca permiti que a descrença se instalasse. Essa resiliência moldou minha força interior, uma característica que permanece arraigada em minha essência. E, mesmo agora, após tantas conquistas, reconheço que ainda sou o mesmo nesse aspecto.</p>
+                <p>Esta introdução pretende ser mais do que um simples preâmbulo. É o testemunho de uma transformação pessoal que precede qualquer postagem ou registro futuro. Uma história de superação, evolução e perseverança que espero continuar, sempre ultrapassando meus limites com segurança, em busca constante de melhoria.</p>
+                <br>
+                <img src="assets/img/PRIMEIRO PEDAL REGISTRADO NO STRAVA.png" alt="primeiro pedal registrado no strava" class="pequena">
+                <br>
+                <img src="assets/img/PRIMEIRA TRILHA REGISTRADA NO STRAVA.png" alt="primeira trilha registrada no strava" class="pequena">
+            </div>
         
         </article>
        
-        <article>
-            <h2>Registros Recentes 🚴</h2>
-                <h3>Tema aleatorio</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iure, recusandae a, hic, nam quibusdam voluptatem atque assumenda cum mollitia illo possimus? Nesciunt illo deleniti culpa dolores obcaecati laborum sed.</p>
-
-                <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/USUJa3N3TOM?si=G_wC_gUYhprxMen0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-
-        </article>
+        <div id="ciclismo1">
+            <article>
+                <h2>Registros Recente🚴</h2>
+                    <h3>Postagem 0 - TESTE 00/00/0000 </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iure, recusandae a, hic, nam quibusdam voluptatem atque assumenda cum mollitia illo possimus? Nesciunt illo deleniti culpa dolores obcaecati laborum sed.</p>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/USUJa3N3TOM?si=G_wC_gUYhprxMen0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+            </article>
+        </div>
 
         <br>
 
-        <aside>
-            <h2>Registros de Eventos - Karate 🥋</h2>
-            <h3>Tema aleatorio</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iure, recusandae a, hic, nam quibusdam voluptatem atque assumenda cum mollitia illo possimus? Nesciunt illo deleniti culpa dolores obcaecati laborum sed.</p>
+        <div id="">
+            <article>
+                <h2>Registros Antigos 🚴</h2>
+                    <h3>Postagem 0 - TESTE 00/00/00 </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iure, recusandae a, hic, nam quibusdam voluptatem atque assumenda cum mollitia illo possimus? Nesciunt illo deleniti culpa dolores obcaecati laborum sed.</p>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/USUJa3N3TOM?si=G_wC_gUYhprxMen0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+            </article>
+        </div>
 
-            <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/USUJa3N3TOM?si=G_wC_gUYhprxMen0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
+        <br>
+
+        <div id="karate1">
+            <aside>
+                <h2>Registros de Eventos - Karate 🥋</h2>
+                <h3>Postagem 1 - TESTE 00/00/0000</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iure, recusandae a, hic, nam quibusdam voluptatem atque assumenda cum mollitia illo possimus? Nesciunt illo deleniti culpa dolores obcaecati laborum sed.</p>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/USUJa3N3TOM?si=G_wC_gUYhprxMen0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
             
-        </aside>
+            </aside>
+        </div>
 
   <p>Para mais informações, dê uma olhada nas redes sociais abaixo! 😄⬇️</p>
 </main>
@@ -103,22 +126,24 @@
 <!--FOOTER / RODAPÉ-->
 <footer>
 
-<p>Site criado por <a href="https://github.com/robertdouglasaimon" target="_blank">Robert Douglas</a> para o <a href="https://www.instagram.com/rd_ciclo/" target="_blank">@rd_ciclo</a> 2024.</p>
-
-<br>
-
-<div class="social-icons">
-<a href="https://www.instagram.com/rd_ciclo/" target="_blank">
-    <img src="assets/img/INSTAGRAM1.png" alt="INSTAGRAM">
-</a>
-
-<a href="https://www.strava.com/athletes/40123709" target="_blank">
-    <img src="assets/img/STRAVA1.png" alt="INSTAGRAM">
-</a>
-
-<a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBxnWkFDHvzRFpVDMKgfdMKXmtCJpMDxtLKdsrcMTGxwBFFKLnCfgMrlnjBmnwJTfZRsGg" target="_blank">
-    <img src="assets/img/CONTATO1.png" alt="INSTAGRAM">
-</a>
+<div id="contato">
+    <p>Site criado por <a href="https://github.com/robertdouglasaimon" target="_blank">Robert Douglas</a> para o <a href="https://www.instagram.com/rd_ciclo/" target="_blank">@rd_ciclo</a> 2024.</p>
+    
+    <br>
+    
+    <div class="social-icons">
+    <a href="https://www.instagram.com/rd_ciclo/" target="_blank">
+        <img src="assets/img/INSTAGRAM1.png" alt="INSTAGRAM">
+    </a>
+    
+    <a href="https://www.strava.com/athletes/40123709" target="_blank">
+        <img src="assets/img/STRAVA1.png" alt="INSTAGRAM">
+    </a>
+    
+    <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBxnWkFDHvzRFpVDMKgfdMKXmtCJpMDxtLKdsrcMTGxwBFFKLnCfgMrlnjBmnwJTfZRsGg" target="_blank">
+        <img src="assets/img/CONTATO1.png" alt="INSTAGRAM">
+    </a>
+    </div>
 </div>
 
 </footer>
