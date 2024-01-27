@@ -136,7 +136,7 @@ main h1 {
     font-size: 1.6em;
 
     background-image: linear-gradient(to right, var(--cor0), transparent);
-    text text-indent: 8px;
+    text-indent: 8px;
 }
 
 main h2 {
@@ -145,7 +145,7 @@ main h2 {
     font-size: 1.4em;
     font-weight: bolder;
     background-image: linear-gradient(to right, var(--cor0), transparent);
-    text text-indent: 8px;
+    text-indent: 8px;
 }
 
 main h3 {
