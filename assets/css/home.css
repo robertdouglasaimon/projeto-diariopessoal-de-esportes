@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&family=Tourney:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 @font-face {
     font-family: 'RoadRage';
@@ -44,6 +48,9 @@
 
 --font-padrao:Arial, Verdana, Helvetica, sans-serif;
 --font-destaque: 'RoadRage', cursive;
+--font-destaque1: 'Road Rage', sans-serif; 
+--font-destaque2: 'Tourney', sans-serif;
+--font-destaque3: 'Comfortaa', sans-serif;
 --font-oswald:'Oswald', cursive;
 --font-sinais-ciclismo:'Cyclo_Trial', cursive;
 --font-sinais-karate:'Atewaza', cursive;
@@ -74,14 +81,15 @@ header {
 
 header > h1 {
     color:white;
-    font-family: var(--font-destaque);
+    font-family: var(--font-destaque2);
+    font-size: 50px;
     margin-bottom: 20px;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.863);
 }
 
 header > p {
-    font-family: var(--font-sinais-ciclismo);
-    font-size: 1.2em;
+    font-family: var(--font-destaque3);
+    font-size: 1.1em;
     color: white;
     max-width: 500px;
     padding-right: 10px;
