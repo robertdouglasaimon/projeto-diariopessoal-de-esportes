@@ -224,14 +224,26 @@ aside {
 }
 
 /*CLASS para videos locais [mp4 e derivados]*/
-.video1 { 
-    width: 560px; 
-    height: 315px;
-    padding: 20px;
-    padding-left: 20%;
-    position: relative;
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
 }
 
+.video1 {
+   width: 100%;
+   position: absolute;
+   display: block; 
+}
+
+.div-video video {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 17px;
+    position: relative;
+    
+}
+/*---------------------------------------------*/
 
 /*-------ESTILIZAÇÃO DOS BOTOES DE SCROLL E DO FILTRO EM '' POSTAGENS '' -------------------------------------------------*/
 
