@@ -223,6 +223,15 @@ aside {
     border-radius: 10px;
 }
 
+/*CLASS para videos locais [mp4 e derivados]*/
+.video1 { 
+    width: 560px; 
+    height: 315px;
+    padding: 20px;
+    padding-left: 20%;
+    position: relative;
+}
+
 
 /*-------ESTILIZAÇÃO DOS BOTOES DE SCROLL E DO FILTRO EM '' POSTAGENS '' -------------------------------------------------*/
 
