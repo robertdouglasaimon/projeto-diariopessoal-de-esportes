@@ -1,7 +1,6 @@
 
 //JS DE INTERATIVIDADE DOS BOTÕES DO NAV ----------------------//
 
-// Adicione o seguinte código ao final do seu script.js
 var dateFilter = document.getElementById("dateFilter");
 
 function applyDateFilter() {
@@ -16,12 +15,11 @@ function applyDateFilter() {
 }
 
 
-//-----------------------------------------------------//
+//------------------------------------------------------------//
 
 
 //CONFIGURAÇÕES DOS BOTÕES DE SUBIR E DESCER  LATERAL (TIVE AJUDA DO CHATGPT!//
 
-// Adicione o seguinte código ao final do seu script.js
 var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 var scrollTopButton = document.querySelector(".scroll-button.scroll-top");
 var scrollBottomButton = document.querySelector(".scroll-button.scroll-bottom");

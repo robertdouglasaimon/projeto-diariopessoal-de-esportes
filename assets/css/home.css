@@ -226,7 +226,7 @@ aside {
 
 /*-------ESTILIZAÇÃO DOS BOTOES DE SCROLL E DO FILTRO EM '' POSTAGENS '' -------------------------------------------------*/
 
-/* Adicione o seguinte código para estilizar os botões de scroll */
+/* Código para estilizar os botões de scroll */
 .scroll-button {
     position: fixed;
     width: 40px;
@@ -255,7 +255,7 @@ aside {
 
 /*POSTAGENS*/
 
-/* Adicione esta regra para estilizar o dropdown */
+/* Regra para estilizar o dropdown */
 .menu-dropdown {
     display: inline-block;
 }
@@ -306,7 +306,7 @@ aside {
     color: var(--cor5);
 }
 
-/*---------------------------------------------------------*/
+/*----------------------------------------------------*/
 
 footer { /*Estilos para o rodapé conforme necessário */
     background-color: var(--cor5);
