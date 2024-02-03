@@ -1,22 +1,7 @@
-
-//JS DE INTERATIVIDADE DOS BOTÕES DO NAV ----------------------//
-
-var dateFilter = document.getElementById("dateFilter");
-
-function applyDateFilter() {
-    var startDate = document.getElementById("startDate").value;
-    var endDate = document.getElementById("endDate").value;
-
-    // Implemente a lógica de filtragem por datas conforme necessário
-    // Por exemplo, você pode ocultar/mostrar as postagens com base nas datas selecionadas
-
-    // Exemplo de console.log:
-    console.log("Filtrar postagens de", startDate, "até", endDate);
-}
+// AREA ONDE EU APLICO OS CONHECIMENTOS BÁSICOS QUE TO APRENDO, SEPARADO DOS CODIGOS ABAIXO! //
 
 
-//------------------------------------------------------------//
-
+/*--------------------------------------------------------------------------------------------*/ 
 
 //CONFIGURAÇÕES DOS BOTÕES DE SUBIR E DESCER  LATERAL (TIVE AJUDA DO CHATGPT!//
 
