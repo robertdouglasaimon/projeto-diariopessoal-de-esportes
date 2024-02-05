@@ -28,7 +28,7 @@ window.addEventListener("scroll", function () {
         scrollBottomButton.style.display = "block"; // Mostra o botão de descer
     }
 
-    // Atualiza a última posição de rolagem
+// Atualiza a última posição de rolagem
     lastScrollTop = st;
 });
 
