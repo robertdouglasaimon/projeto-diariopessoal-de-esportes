@@ -47,3 +47,21 @@ function scrollToBottom() {
 }
 
 //-----------------------------------------------------------------------------------//
+
+// CONFIG PARA A BARRA DE BUSCA DA PAGINA
+
+function searchContent() {
+    var searchText = document.getElementById("searchInput").value.toLowerCase();
+    var paragraphs = document.getElementsByTagName("p");
+
+    for (var i = 0; i < paragraphs.length; i++) {
+        var content = paragraphs[i].innerText.toLowerCase();
+        if (content.includes(searchText)) {
+            paragraphs[i].style.display = "block"; // ou "inline" ou o estilo que quiser
+        } else {
+            paragraphs[i].style.display = "none";
+        }
+    }
+
+    return false; // Isso impede o envio do formulário
+}

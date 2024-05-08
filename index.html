@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robert Douglas - Diário Pessoal</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/home.css">
 </head>
 
@@ -18,35 +19,76 @@
 <!--------------------------------------------->
 
 <!--NAV - MENU SUPERIOR --------------->
-<nav>
-    <a href="index.html">Início</a>
-    <a href="#recentes">Recentes</a>
-    <a href="#antigos">Antigos</a>
-    <!------------------------------------------------------->
-    <div class="menu-dropdown">
-        <button class="dropdown-button">Postagens</button>
-        <div class="dropdown-content">
-            <div id="postList">
-                <!-- Lista de postagens -->
-                <a href="#quemsoueu">Quem sou eu</a>
-                <a href="#introducao">Introdução</a>
-                <a href="#ciclismo00"><abbr title="Registro Recente">#Ciclismo 00</abbr></a>
-                <a href="#ciclismo01"><abbr title="Registro Antigo">#Ciclismo 01</abbr></a>
-                <a href="#ciclismo02"><abbr title="Registro Antigo">#Ciclismo 02</abbr></a>
-                <a href="#ciclismo03"><abbr title="Registro Antigo">#Ciclismo 03</abbr></a>
-                <a href="#karate1"><abbr title="Registro Antigo">#Karate 01</abbr></a>
-                <a href="#karate2"><abbr title="Registro Antigo">#Karate 02</abbr></a>
-                <a href="#karate3"><abbr title="Registro Antigo">#Karate 03</abbr></a>
-                <a href="#karate4"><abbr title="Registro Antigo">#Karate 04</abbr></a>
-                <a href="#karate5"><abbr title="Registro Recente">#Karate 05</abbr></a>
-                <a href="#karate6"><abbr title="Registro Recente">#Karate 06</abbr></a>
-                <a href="#karate7"><abbr title="Registro Antigo">#Karate 07</abbr></a>
-            </div>
-        </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <a class="navbar-brand" href="#">Menu</a>
+
+<!---TOGGLE MENU =D ---------------------------------------->    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+<!--------------------------------------------------------->    
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navfont">
+            <li class="nav-item">
+                 <a class="nav-link btn btn-outline-info" href="index.html"><strong>Inicio</strong></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link btn btn-outline-info" href="#recentes"><strong>Recentes</strong></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link btn btn-outline-info" href="#antigos"><strong>Antigos</strong></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link btn btn-outline-info" href="#contato"><strong>Contato</strong></a>
+            </li>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <strong>Postagens</strong>
+                </button>
+                <div class="dropdown-menu">
+
+                  <!--SESSÃO DE INTRODUÇÃO--> 
+                  <a class="dropdown-item" href="#quemsoueu" >Quem sou eu</a>
+                  <a class="dropdown-item" href="#introducao">Introdução</a>
+
+                  <div class="dropdown-divider"></div>
+
+                  <!--SESSÃO DOS POSTS DE CICLISMO--> 
+                  <a class="dropdown-item"    href="#ciclismo00"><abbr title="Registro Recente">#Ciclismo 00</abbr></a>
+                  <a class="dropdown-item"    href="#ciclismo01"><abbr title="Registro Antigo">#Ciclismo 01</abbr></a>
+                  <a class="dropdown-item"    href="#ciclismo02"><abbr title="Registro Antigo">#Ciclismo 02</abbr></a>
+                  <a class="dropdown-item"    href="#ciclismo03"><abbr title="Registro Antigo">#Ciclismo 03</abbr></a>
+
+                  <div class="dropdown-divider"></div>
+
+                  <!--SESSÃO DOS POSTS DE KARATE-->  
+                  <a class="dropdown-item" href="#karate1"><abbr title="Registro Antigo">#Karate 01</abbr></a>
+                  <a class="dropdown-item" href="#karate2"><abbr title="Registro Antigo">#Karate 02</abbr></a>
+                  <a class="dropdown-item" href="#karate3"><abbr title="Registro Antigo">#Karate 03</abbr></a>
+                  <a class="dropdown-item" href="#karate4"><abbr title="Registro Antigo">#Karate 04</abbr></a>
+                  <a class="dropdown-item" href="#karate5"><abbr title="Registro Recente">#Karate 05</abbr></a>
+                  <a class="dropdown-item" href="#karate6"><abbr title="Registro Recente">#Karate 06</abbr></a>
+                  <a class="dropdown-item" href="#karate7"><abbr title="Registro Antigo">#Karate 07</abbr></a>
+                </div>
+              </div>
+
+        </ul>
+      <form class="form-inline my-2 my-lg-0" onsubmit="return searchContent()">
+        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar">
+        
+        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">
+            <strong>Buscar</strong>
+        </button>
+      </form>
     </div>
-    <!------------------------------------------------------->
-    <a href="#contato">Contato</a>
-</nav>
+  </nav>
 
 <!--BOTÃO DE SUBIR E DESCER A TELA / FILTRO POR DATAS ------->
 <!-- Adicione o seguinte código no início do <body> para o botão lateral -->
@@ -55,6 +97,61 @@
 <div class="scroll-button scroll-top" onclick="scrollToTop()">↑</div>
 <div class="scroll-button scroll-bottom" onclick="scrollToBottom()">↓</div>
 <!----------------------------------------------------------->
+
+<!-----SLIDE-------------------------------------------------->
+<div class="container">
+    <div class="slide carousel" id="slideshowExemplo">
+
+        <ol class="carousel-indicators">
+            <li data-target="#slideshowExemplo" data-slite-to="0" class="active"></li>
+            <li data-target="#slideshowExemplo" data-slite-to="1" class="active"></li>
+            <li data-target="#slideshowExemplo" data-slite-to="2" class="active"></li>
+            <li data-target="#slideshowExemplo" data-slite-to="3" 
+            class="active"></li>
+            <li data-target="#slideshowExemplo" data-slite-to="4" 
+            class="active"></li>
+            <li data-target="#slideshowExemplo" data-slite-to="5" 
+            class="active"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/SLIDE/Screenshot_20240112-151801_Strava.jpg" class="w-100">
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/img/SLIDE/Screenshot_20240126-131942_Strava.jpg" class="w-100">
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/img/SLIDE/IMG-20230521-WA0016.jpg" class="w-100">
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/img/SLIDE/PSX_20230502_231231.jpg" class="w-100">
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/img/SLIDE/Screenshot_20240112-151611_Strava.jpg" class="w-100">
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/img/SLIDE/20230203_131339.jpg" class="w-100">
+            </div>
+
+            <a class="carousel-control-prev" href="#slideshowExemplo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+
+            <a class="carousel-control-next" href="#slideshowExemplo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+</div>  
+<!----------------------------------------------------------------------------->
+
+<!-----CONTEUDO PRINCIPAL------------------------------------------------------>
 <main>
         <section>
             <article>
@@ -476,29 +573,31 @@
 <!--FOOTER / RODAPÉ-->
 <footer>
 
-<div id="contato">
-    <p>Site criado por <a href="https://github.com/robertdouglasaimon" target="_blank">Robert Douglas</a> para o <a href="https://www.instagram.com/rd_ciclo/" target="_blank">@rd_ciclo</a> 2024.</p>
-    
-    <br>
-    
-    <div class="social-icons">
-    <a href="https://www.instagram.com/rd_ciclo/" target="_blank">
-        <img src="assets/img/INSTAGRAM1.png" alt="INSTAGRAM">
-    </a>
-    
-    <a href="https://www.strava.com/athletes/40123709" target="_blank">
-        <img src="assets/img/STRAVA1.png" alt="INSTAGRAM">
-    </a>
-    
-    <a href="mailto:robertdouglasaimon@gmail.com" target="_blank">
-        <img src="assets/img/CONTATO1.png" alt="INSTAGRAM">
-    </a>
+    <div id="contato">
+        <p>Site criado por <a href="https://github.com/robertdouglasaimon" target="_blank">Robert Douglas</a> para o <a href="https://www.instagram.com/rd_ciclo/" target="_blank">@rd_ciclo</a> 2024.</p>
+        
+        <br>
+        
+        <div class="social-icons">
+            <a href="https://www.instagram.com/rd_ciclo/" target="_blank">
+                <img src="assets/img/INSTAGRAM1.png" alt="INSTAGRAM">
+            </a>
+            
+            <a href="https://www.strava.com/athletes/40123709" target="_blank">
+                <img src="assets/img/STRAVA1.png" alt="INSTAGRAM">
+            </a>
+            
+            <a href="mailto:robertdouglasaimon@gmail.com" target="_blank">
+                <img src="assets/img/CONTATO1.png" alt="INSTAGRAM">
+            </a>
+        </div>
     </div>
-</div>
 
 </footer>
 
 <!-- FIM DO CORPO DO SITE -->
-</body>     
+</body>   
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script> 
 <script src="assets/js/script.js"></script>
 </html>
